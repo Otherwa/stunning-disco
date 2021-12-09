@@ -1,0 +1,173 @@
+<!DOCTYPE html lang="UTF-8">
+<!--
+Except as permitted by the copyright law applicable to you, you may not reproduce or communicate any of the content on this website, including files downloadable from this website, without the permission of the copyright owner.
+The Australian Copyright Act allows certain uses of content from the internet without the copyright owner’s permission. This includes uses by educational institutions and by Commonwealth and State governments, provided fair compensation is paid. For more information, see www.copyright.com.au and www.copyright.org.au.
+The owners of copyright in the content on this website may receive compensation for the use of their content by educational institutions and governments, including from licensing schemes managed by Copyright Agency.
+We may change these terms of use from time to time. Check before re-using any content from this website. 
+-->
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="imgs/www.png">
+        
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Easter Egg.
+        </title>  
+    <script type="text/javascript">
+        //timer
+            var countDownDate = new Date("Dec 25, 2021 15:37:25").getTime(); //Set date on event
+            // Update 1 second
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                var timerem = countDownDate - now;
+                // days, hours, minutes and seconds
+              var days = Math.floor(timerem / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((timerem % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((timerem % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((timerem % (1000 * 60)) / 1000);
+              document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec ";
+              if (timerem < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "FINISHED?";
+              }
+            }, 1000);
+    </script>
+    <style>
+        /*basic script*/
+            .container-main{
+                text-align:center;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 1.5rem ;
+                margin:0%;
+                align-items:center;
+            }
+            a,p{
+                color:white;
+                font-family: 'Press Start 2P', cursive;
+                font-size:0.9em;
+                letter-spacing:0.1rem;
+                
+                
+            }
+           footer{
+            text-align: justify;
+            color:white;
+           }
+           section{
+            text-align: left;
+            color:white;
+            padding: 1.2rem;
+            border-style:solid none none none;
+            border-width: 3px;
+            margin: 1.4rem;
+            font-size:0.7rem;
+            text-align: center;
+           }
+           #demo{
+            font-size:1em;
+            color:white;
+            
+           }
+            
+           img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 10.2em;
+                width: 15.2em;
+            }
+            /* navbar*/
+                    ul.topnav {
+                    list-style-type: none;
+                    margin: 0%;
+                    padding: 0.2rem;
+                    overflow: hidden;
+                    background-color: #333;
+                    }
+
+                    ul.topnav li {
+                        float: left;
+                    }
+
+                    ul.topnav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 1.4rem 1.6rem;
+                    text-decoration: none;
+                    }
+
+                    ul.topnav li a:hover:not(.active) {
+                        background-color: rgb(29, 29, 29);
+                        transition:0.3s;
+                    }
+
+                    ul.topnav li a.active {
+                        background-color: #aa0404;
+                        border-radius: 0.2rem 0.2rem;
+                    }
+
+                    ul.topnav li.right {
+                        float: right;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                    ul.topnav li.right, 
+                    ul.topnav li {float: none;}
+                    }    
+                   
+                    img{
+                    padding: auto;
+                    pointer-events: none;
+                }
+            
+    </style>
+    </head>
+    <body style="margin: 0%;background-color: black">
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <li><a href="intro.html">Into</a></li>
+                    <li><a  href="main.html">Home</a></li>
+                    <li><a  href="News.html">News</a></li>
+                    <li><a class="active" href="games.html">Games</a></li>
+                    <li class="right"><a href="about.html">About</a></li>
+                  </ul>
+            </nav>
+            </header>
+
+
+        <div class="container-main">
+        <p id="demo" >Ping...</p><br>
+        <div style="font-size:1.5rem;text-align:center;margin-left: 10%;margin-right: 10%;">
+            
+          <p style="text-align:center;font-size: 1.1rem;">The fucking title of part</p>
+        </div>
+        
+    </div>
+    
+<section>
+<p style="text-align:left;font-size:1.0rem">GAMES</p>
+
+
+
+</section>
+
+        <footer>
+            <!--changing-->
+        <img src="imgs/main.gif">
+        <br>
+        <P style="text-align:right;font-size: 0.5rem;">&copy All rights reserved.&nbsp;</P> 
+        </footer>
+    </div>
+
+    </body>
+    <!--
+    You weren't suppose to be here, but Nice
+    -->  
+</html>
