@@ -23,8 +23,28 @@ We may change these terms of use from time to time. Check before re-using any co
  
     <style>
         /*minor changes*/
-            
-            
+
+
+#videoDiv2 {
+    width:100%; max-width:0 px; margin:auto; display:block; position: relative;} /* This has been changed */
+#video2{
+    width:100%; height:auto ;
+} /* This has been changed */
+#videoMessage2 { 
+background-color:rgb(1,1,1,0.2);
+position: absolute; top: 0; left: 0;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center; 
+width: 100%;
+height: 100%;
+padding: 1rem;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
     </style>
     </head>
     <body style="margin: 0%;background-color: rgb(11, 11, 11);">
@@ -44,31 +64,46 @@ We may change these terms of use from time to time. Check before re-using any co
         <div class="container-main">
         <p id="demo">Ping...</p><br>
         <div style="font-size:1.5rem;text-align:center;margin-left: 10%;margin-right: 10%;">
-          <p style="text-align:center;font-size: 1.1rem;">Inventrix F</p>
+          <p style="text-align:center;font-size: 1.1rem;">Intro</p>
         </div>
         
     </div>
     
 <section>
-<p style="text-align:left;font-size:1.0rem;padding-left: 1.1rem;">INTRO</p><br>
-<br>
-    <br>
+<!--<p style="text-align:left;font-size:1.0rem;padding-left: 1.1rem;">INTRO</p><br>
+<br>-->
 </section>
+      <div class="back">
+        
 
-<div class="text">
-    <img src="imgs/ioop.jpg" style="padding: 1.2em" alt="imgpage" align="right">
-    <p>
-     Inventrix is an event held by the I.T Department of Kelkar vaze College of Engineering & Technology, Oragadam,<br>a private engineering college located in Oragadam, near Chennai, India.   
-     <div class="typewriter">        
-        <div class="typewriter-text">
-            <p style="font-size:0.9rem">
-            Let's go.
-                </p>
+       <!-- <video src="back.mp4" autoplay loop playsinline muted>
+        </video>
+    -->
+    <div id="videoDiv2"> 
+        <video id="video2" preload="" autoplay="" muted="" playsinline="" loop="">
+        <source src="video/t12.webm" type="video/webm">
+        <source src="imgs/Typing.mp4">
+        </video> 
+            <div id="videoMessage2">
+                <div class="typewriter">       
+                    <div class="typewriter-text">
+                        <p style="font-size:2.6rem">
+                        Inventrix.
+                            </p>
+                    </div>
+                    <p>Test in dev </p>
+                    
+                </div>
+                
+            </div>
+            
         </div>
-    </div>
+                   
+      
+
     </p>
     
-</div>  
+ </div>
 
     
 

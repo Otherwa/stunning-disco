@@ -27,7 +27,7 @@ section{
             text-align: left;
             color:white;
             padding: 1rem 1rem 0;
-            border-style:solid none none none;
+            border-style:none none none none;
             border-width: 3px;
             margin: auto;
             font-size:0.7rem;

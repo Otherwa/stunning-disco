@@ -1,5 +1,5 @@
 //timer
-var countDownDate = new Date("Dec 16, 2021 10:00:00").getTime(); //Set date on event
+var countDownDate = new Date("Dec 25, 2021 10:00:00").getTime(); //Set date on event
 // Update 1 second
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -18,7 +18,7 @@ var x = setInterval(function() {
 
 /////////
 function Redirect(){
-  window.open('http://stackoverflow.com', '_blank');
+  window.open('contact_form.html', '_blank');
 }
 
 
