@@ -1,5 +1,7 @@
 /*main design and nav*/
-
+html{
+    scroll-behavior: smooth;
+}
 .container-main{
     text-align:center;
     font-family: 'Courier New', Courier, monospace;
@@ -11,9 +13,11 @@ a,p{
     color:white;
     font-family: 'Press Start 2P', cursive;
     font-size:0.9em;
-    letter-spacing:0.1rem;
-    
-    
+    letter-spacing:0.1rem;    
+}
+.text{
+    margin-left:10%;
+    margin-right:10%;
 }
 footer{
 text-align: justify;
@@ -22,7 +26,7 @@ color:white;
 section{
             text-align: left;
             color:white;
-            padding: 1.2rem;
+            padding: 1rem 1rem 0;
             border-style:solid none none none;
             border-width: 3px;
             margin: auto;
@@ -30,15 +34,24 @@ section{
             text-align: center;
 }
 
-/*form */
-form{
+/*gmaes */
+.game{
+    background-color:gray;
+    border-radius: 0.5rem;
+    margin-left:10%;
+    margin-right:10%;
+}
+.game_info{
+    background-color: rgb(102, 102, 102);
     padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align:left;
 }
 
 #demo{
-font-size:0.7em;
+font-size:1.1em;
 color:white;
-
+line-height: 1.6rem;
 }
 /*button*/
 .button {
@@ -90,7 +103,12 @@ color:white;
     padding:1rem;
     
    }
-  
+  .text{
+    padding: 1.1rem;
+    text-align:left;
+    word-spacing:0.7rem;
+    line-height: 1.5rem;
+  }
 img {
     display: block;
     margin-left: auto;
@@ -166,9 +184,9 @@ img {
     display: inline-block;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	animation: typing 3s steps(30, end), blink .75s step-end infinite;
+ 	animation: typing 2s steps(20, end), blink .75s step-end infinite;
     white-space: nowrap;
-    border-right: 4px solid orange;
+    border-right: 4px solid rgb(255, 0, 0);
     box-sizing: border-box;
     text-align: justify;
 }
@@ -187,6 +205,15 @@ img {
         border-color: transparent 
     }
     50% { 
-        border-color: orange; 
+        border-color: rgb(255, 0, 0); 
     }
+}
+/*bot navigation*/
+.bot_nav{
+    text-align:center;
+    font-size:0.8rem;
+}
+
+.active{
+    color:red;
 }
