@@ -4,8 +4,7 @@ html{
 }
 .container-main{
     text-align:center;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1.5rem ;
+    padding: 1.5rem 1rem 1rem 0rem;
     margin:0%;
     align-items:center;
 }
@@ -15,6 +14,7 @@ a,p{
     font-size:0.9em;
     letter-spacing:0.1rem;    
 }
+
 .text{
     margin-left:10%;
     margin-right:10%;
@@ -122,7 +122,7 @@ img {
         margin: 0%;
         padding: 0.2rem;
         overflow: hidden;
-        background-color: #333;
+        background-color: rgb(10, 10, 10);
         }
 
         ul.topnav li {
@@ -138,7 +138,7 @@ img {
         }
 
         ul.topnav li a:hover:not(.active) {
-            background-color: rgb(29, 29, 29);
+            background-color: rgb(34, 31, 31);
             transition:0.6s;
         }
 
@@ -217,3 +217,6 @@ img {
 .active{
     color:red;
 }
+/*scrolling text*/
+
+

@@ -21,14 +21,14 @@ function submitForm(e) {
   e.preventDefault();
 
   //   Get input Values
-  let name = document.querySelector(".name").value;
-  let email = document.querySelector(".email").value;
-  let message = document.querySelector(".message").value;
-  let roll = document.querySelector(".roll").value
-  let phone = document.querySelector(".phone").value
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  let roll = document.getElementById("roll").value
+  let phone = document.getElementById("phone").value
   console.log(name, email, message,roll,phone);
   if(name=="" || email=="" || roll =="" || phone==""){
-    return alert("Fill again Bitch");
+    return alert("Fill again Cabron");
   }
   else{
   saveContactInfo(name, email, message,roll,phone);
