@@ -23,6 +23,53 @@ footer{
 text-align: justify;
 color:white;
 }
+
+
+*{
+    box-sizing: border-box;
+}
+#main_text{
+    padding: 3rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    text-align: justify;
+    
+}
+@media(min-width:800px) {
+    .figma{
+        display:flex;
+        padding: 1.9rem;
+    }
+}
+#con_main {
+    text-align: center;
+}  
+/* figma trans*/
+
+/**********curve**********************/    
+.curve {
+    background: linear-gradient(214deg, #13985e, #319813, #134b98, #134b98);
+    background-size: 800% 800%;
+    -webkit-animation: A1 7s ease infinite;
+    -moz-animation: A2 7s ease infinite;
+    animation: A3 7s ease infinite;
+}
+
+@-webkit-keyframes A1 {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-moz-keyframes A2 {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@keyframes A3 {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
 section{
             text-align: left;
             color:white;
@@ -57,7 +104,7 @@ line-height: 1.6rem;
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: rgb(190, 12, 12);
+    background-color: rgb(187, 30, 30);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -120,7 +167,7 @@ img {
         ul.topnav {
         list-style-type: none;
         margin: 0%;
-        padding: 0.2rem;
+        padding: 0rem;
         overflow: hidden;
         background-color: rgb(10, 10, 10);
         }
@@ -138,13 +185,14 @@ img {
         }
 
         ul.topnav li a:hover:not(.active) {
-            background-color: rgb(34, 31, 31);
+            background-color: rgb(223, 135, 135);
             transition:0.6s;
+            
         }
 
         ul.topnav li a.active {
-            background-color: rgb(190, 12, 12);
-            border-radius: 0.2rem 0.2rem;
+            background-color: rgb(230, 52, 52);
+            
         }
 
         ul.topnav li.right {

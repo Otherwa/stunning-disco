@@ -50,7 +50,7 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size:0.7rem;
   left: 1rem;
-  top: 1.25rem;
+  top: 0.9rem;
   padding: 0 0.5rem;
   color: white;
   cursor: text;
@@ -70,10 +70,11 @@ When the input is in the focus state reduce the size  label and move
 }
 
 .status{
-  display: none;
-  padding:1rem 0 0 1rem;
+  
+  padding:2rem;
   background-color:rgb(199, 10, 10);
-  margin: 0.5rem;
+  margin: 2rem;
+  display:none;
 }
 .contact-form{
   text-align: center;
