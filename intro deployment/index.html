@@ -23,21 +23,22 @@ We may change these terms of use from time to time. Check before re-using any co
             window.open('contact_form.html', '_self');
         }    
         </script>
+        <script type="text/javascript" src="Js/js_main.js"></script>
     <style>
         /*minor changes*/
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
     </style>
     </head>
-    <body class="curve" style="margin: 0%;">
+    <body style="margin: 0%;background-image:url('imgs/shapes.gif')" class="curve">
         <header>
             <nav>
                 <ul class="topnav">
-                    <li><a class="active"href="index.html"><i class="fa fa-calendar">&nbsp;<p>Intro</p></i></a></li>
-                    <li><a href="main.html"><i class="fa fa-folder-open">&nbsp;<p>Main</p></i></a></li>
-                    <li><a href="news.html"><i class="fa fa-podcast">&nbsp;<p>News</p></i></a></li>
-                    <li><a href="games.html"><i class="fa fa-cubes">&nbsp;<p>Games</p></i></a></li>
-                    <li class="right"><a  href="about.html"><i class="fa fa-code">&nbsp;<p>About</p></i></a></li>
+                    <li><a class="active"href="index.html"><i class="fa fa-calendar"><p>Intro</p></i></a></li>
+                    <li><a href="main.html"><i class="fa fa-folder-open"><p>Main</p></i></a></li>
+                    <li><a href="news.html"><i class="fa fa-podcast"><p>News</p></i></a></li>
+                    <li><a href="games.html"><i class="fa fa-cubes"><p>Games</p></i></a></li>
+                    <li class="right"><a  href="about.html"><i class="fa fa-code"><p>About</p></i></a></li>
                   </ul>
             </nav>
             </header>
@@ -55,14 +56,7 @@ We may change these terms of use from time to time. Check before re-using any co
             <br>
             <br>
             <br>
-                <div class="typewriter" style="margin: 1rem;">       
-                    <div class="typewriter-text" style="margin:1.2rem;">
-                        <p style="font-size:160%;">
-                        Inventrix.
-                            </p>
-                    </div>
-                    <p >Make it Happen.</p>
-                    
+            <p id="demo" >Ping...</p><br>
                 </div>
                 <br>
                 <br>
@@ -72,25 +66,31 @@ We may change these terms of use from time to time. Check before re-using any co
             
         </div>
 
-    <div class="figma" style="font-size:2.1rem">
-    <div id="main_text" style="float:left;background-color: #FFB34D;">
-        <p style="color:black">
-                   The <span style="color:rgb(151, 16, 16)"> IT department at V.G. Vaze's College of Arts, Commerce, and Science</span> hosts Inventrix every year. This event has been held every year, but just for the I.T. department. This year, though, it is going to be so much more! The goal is to get as many individuals as possible to participate.
+    <div class="figma" style="font-size:2.1rem;">
+    <div class="main_text" style="float:left;background-color: #e29939;">
+        <div class="typewriter" style="margin: 1rem;">       
+            <div class="typewriter-text">
+                <p style="font-size:160%;">
+                Inventrix.
+                    </p>
+            </div>
+            <p >Make it Happen.</p>
+            </div>
+        <p style="color:black;padding:0.9rem;text-align: left;">
+                   The <span style="color:rgb(151, 16, 16);font-size: 0.8rem;word-spacing: 0.1em;"> IT department at V.G. Vaze's College of Arts, Commerce, and Science</span> hosts Inventrix every year. This event has been held every year, but just for the I.T. department. This year, though, it is going to be so much more! The goal is to get as many individuals as possible to participate.
         </p>
-        <div>
+        <div style="padding:1vh">
             <br>
             <br>
-            <button class="button" onclick="Redirect()" style="vertical-align:middle"><span style="font-family:'Press Start 2P', cursive;font-size: 0.8rem;">Register </span></button>
+            <button class="button" onclick="Redirect()" style="vertical-align:middle"><span style="font-family:'Press Start 2P', cursive;font-size: 0.8rem;">Explore </span></button>
     </div>    
     </div>
 <br>
-    <div id="main_text" style="float:right;color:black;background-color: whitesmoke;">
-        <p style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           
-            <br>Don't Forget to Register!</p>
+    <div class="main_text" style="float:right;color:black;background-color: whitesmoke;">
+        <p style="color:black;text-align:center;">
+            <br>&&nbsp;Don't Forget to Register! &nbsp;&nbsp;</p>
         
-        <img src="imgs/GIF.gif" style="width:14rem;height:14rem;">
+        <img src="imgs/GIF.gif" alt="GIF.gif" style="width:14rem;height:14rem;">
       
             
     </div>
@@ -98,9 +98,12 @@ We may change these terms of use from time to time. Check before re-using any co
     <br>
 </div>
  </div>
-</body>
+
  <br>
  <br>
+ <div class="footer">
+     &nbsp;
+     </div>
  <br>
  
  <br>
@@ -110,10 +113,10 @@ We may change these terms of use from time to time. Check before re-using any co
     <!--changing-->
     <div style="padding:1.2em">
     
-        &nbsp;<a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-instagram" style="font-size:21px;text-align:bottom;padding-right:0.5rem;padding-left: 0.2rem"></i></a>
-        &nbsp;<a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-telegram" style="font-size:21px;text-align:bottom;" aria-hidden="true"></i></a>
+        <a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-instagram" style="font-size:21px;text-align:bottom;padding-right:0.5rem;padding-left: 0.2rem"></i></a>
+        <a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-telegram" style="font-size:21px;text-align:bottom;" aria-hidden="true"></i></a>
         
-        <P style="float:right;font-size: 0.5rem;">&copy All rights reserved.&nbsp;</P>     
+        <P style="float:right;font-size: 0.5rem;">&copy All rights reserved.</P>     
 </div>
 </footer>
     </body>

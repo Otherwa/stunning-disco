@@ -1,5 +1,5 @@
 //timer
-var countDownDate = new Date("Dec 25, 2021 10:00:00").getTime(); //Set date on event
+var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime(); //Set date on event
 // Update 1 second
 var x = setInterval(function() {
     var now = new Date().getTime();

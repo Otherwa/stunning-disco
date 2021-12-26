@@ -36,6 +36,9 @@ function submitForm(e) {
   setTimeout(() => {
     document.querySelector(".status").style.display="none";
   },6900);
+  setTimeout(() => {
+    window.open('main.html', '_self');
+  },6900);
   document.querySelector(".contact-form").reset();
   }
 }

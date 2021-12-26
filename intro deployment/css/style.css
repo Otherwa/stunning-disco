@@ -4,7 +4,7 @@ html{
 }
 .container-main{
     text-align:center;
-    padding: 1.5rem 1rem 1rem 0rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     margin:0%;
     align-items:center;
 }
@@ -28,17 +28,19 @@ color:white;
 *{
     box-sizing: border-box;
 }
-#main_text{
-    padding: 3rem;
+.main_text{
+    padding: 4vh;
     line-height: 1.6rem;
     font-size: 1rem;
     text-align: justify;
     
 }
-@media(min-width:800px) {
+
+@media(min-width:600px) {
     .figma{
         display:flex;
-        padding: 1.9rem;
+        margin: 10vh;
+    
     }
 }
 #con_main {
@@ -48,28 +50,10 @@ color:white;
 
 /**********curve**********************/    
 .curve {
-    background: linear-gradient(214deg, #13985e, #319813, #134b98, #134b98);
-    background-size: 800% 800%;
-    -webkit-animation: A1 7s ease infinite;
-    -moz-animation: A2 7s ease infinite;
-    animation: A3 7s ease infinite;
-}
+   margin:0%;background-size: cover;background-repeat:no-repeat;
+   }
+/*
 
-@-webkit-keyframes A1 {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
-}
-@-moz-keyframes A2 {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
-}
-@keyframes A3 {
-    0%{background-position:0% 79%}
-    50%{background-position:100% 22%}
-    100%{background-position:0% 79%}
-}
 section{
             text-align: left;
             color:white;
@@ -96,15 +80,17 @@ section{
 }
 
 #demo{
-font-size:1.1em;
+font-size:3vh;
 color:white;
-line-height: 1.6rem;
+line-height: 2rem;
+text-align:center;
+padding: 0.3rem;
 }
 /*button*/
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: rgb(187, 30, 30);
+    background-color: rgb(35, 182, 79);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -186,12 +172,14 @@ img {
 
         ul.topnav li a:hover:not(.active) {
             background-color: rgb(223, 135, 135);
+            color:rgb(0, 0, 0);
             transition:0.6s;
             
         }
 
         ul.topnav li a.active {
             background-color: rgb(230, 52, 52);
+            color:black;
             
         }
 

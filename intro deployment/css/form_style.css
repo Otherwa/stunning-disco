@@ -35,6 +35,7 @@ body {
   outline: none;
   padding: 1.25rem;
   background: none;
+  background-color: #000000;
   /* Change border when input focus*/
 }
 .form__input:hover {
@@ -64,17 +65,41 @@ When the input is in the focus state reduce the size  label and move
 */
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.5rem;
+  top: -0.6rem;
   font-size: 0.8rem;
   left: 0.8rem;
 }
+.curve1 {
+  background: linear-gradient(270deg, #db2613, #48aa1b, #13bdd9, #13bdd9);
+  background-size: 800% 800%;
 
+  -webkit-animation: AnimationName1 9s ease infinite;
+  -moz-animation: AnimationName2 9s ease infinite;
+  animation: AnimationName3 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName1 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName3 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 .status{
-  
-  padding:2rem;
+  padding:4vh;
+  margin: 4vh;
   background-color:rgb(199, 10, 10);
-  margin: 2rem;
   display:none;
+  border-radius: 0.5rem;
+  font-size: 1.6vh;
 }
 .contact-form{
   text-align: center;
