@@ -49,9 +49,9 @@ body {
 .form__label {
   position: absolute;
   font-family: 'Press Start 2P', cursive;
-  font-size:0.7rem;
+  font-size:0.6rem;
   left: 1rem;
-  top: 0.9rem;
+  top: 0.8rem;
   padding: 0 0.5rem;
   color: white;
   cursor: text;
@@ -112,6 +112,19 @@ body{
 .form input {
 
   font-family: 'Press Start 2P', cursive !important;
-  font-size: 0.7rem;
+  font-size: 0.566rem;
 
+}
+select {
+  padding: 0.4rem;
+  margin: 1.4rem;
+  font-size: 0.7rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+select option{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.radio{
+  margin-left:1.3rem;
 }
