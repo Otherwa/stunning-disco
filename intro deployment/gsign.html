@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="732899449129-71d0p2fhd5i53sgoovol9fjea7epfhf3.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="imgs/www.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/form_style.css">
+    <link rel="stylesheet" href="css/style.css">
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+  </head>
+  <body style="text-align: center;margin-top:10vh;background-color: rgb(0, 0, 0);">
+
+    <div class="g-signin2" style="display:inline-block; text-align: center;"data-onsuccess="onSignIn" data-theme="dark">
+    
+    
+    </div>
+    <div class="g-signin1">
+      <code style="color:white;font-size:1.2rem;">Login to<br>chat<br>(authecity)</code>
+      </div>
+    <br>
+    <!--chat sys-->
+    <div class="data" style="display:none;text-align: center;">
+      <p style="color:white">In_Dev Chat-box</p><br>
+      <textarea id="messages" rows="20" cols="30" style="background-color:black;color:white;border-radius:0.2rem" readonly></textarea>
+      <br><br>
+      <code style="color:rgb(196, 181, 181);margin: 1rem;">Scroll to bottom for new messages</code>
+      <br><br>
+      <form onsubmit="return sendMessage();" style="padding: 0.5rem;">
+      <input id="message" placeholder="Enter message" autocomplete="off" style="padding: 0.2rem;width:100%"><br><br>
+      <button class="btn" style="background-color: rgb(61, 226, 46);border-style: solid ;border-width: 1px;border-color: green;color:white;padding: 0.2rem;font-size:2vh;font-family:'Courier New', Courier, monospace;width:4rem;height:2rem;border-radius: 0.2rem;" onclick="return sendMessage();">send</button>
+        <br><br>
+        <button type="button" onClick="signOut()" style="background-color: rgb(139, 20, 20);border-style: solid ;border-width: 1px;border-color: rgb(128, 4, 0);color:white;padding: 0.2rem;font-size:2vh;font-family:'Courier New', Courier, monospace;width:6rem;height:2rem;border-radius: 0.2rem">Sign out</button>
+    </form>
+  </div>
+</body>
+    
+    <script type="text/javascript">
+      var myName;
+var email;
+
+function onSignIn(googleUser) {
+  // Useful data for your client-side scripts:
+  var profile = googleUser.getBasicProfile();
+  console.log("ID: " + profile.getId());
+  localStorage.setItem("Id",profile.getId());
+  myName=profile.getName();
+  email=profile.getEmail();
+  // The ID token you need to pass to your backend:
+  var id_token = googleUser.getAuthResponse().id_token;
+  console.log("ID Token: " + id_token);
+  document.querySelector(".data").style.display ="block";
+  document.querySelector(".g-signin2").style.display="none";
+  document.querySelector(".g-signin1").style.display="none";
+}
+
+function signOut() {
+var auth2 = gapi.auth2.getAuthInstance();
+auth2.signOut().then(function () {
+console.log('User signed out.');
+document.querySelector(".data").style.display ="none";
+  document.querySelector(".g-signin2").style.display="inline-block";
+  document.querySelector(".g-signin1").style.display="inline-block";
+
+});
+}
+//chat
+const mainConfig = {
+apiKey: "AIzaSyBKTjTMy2Trfs79UHuXHOrgFKSAEQnUYV4",
+authDomain: "vent-92591.firebaseapp.com",
+databaseURL: "https://vent-92591-default-rtdb.asia-southeast1.firebasedatabase.app",
+projectId: "vent-92591",
+storageBucket: "vent-92591.appspot.com",
+messagingSenderId: "832851875687",
+appId: "1:832851875687:web:7b3acbe6da4a15371b01c2"
+};
+// Initialize Firebase
+firebase.initializeApp(mainConfig);
+
+
+//send message to Firebase
+function sendMessage() {
+  // get message
+  var message = document.getElementById("message").value;
+  document.getElementById("message").value = "";
+  // save in database
+  firebase.database().ref("messages").push().set({
+      "sender": myName,
+      "message": message,
+      "email":email
+  });
+
+  // prevent form from submitting
+  return false;
+}
+//Storage message
+firebase.database().ref("messages").on("child_added", function (snapshot) {
+  var html = "";
+  // give each message a unique ID
+  
+  html += snapshot.val().sender + ": " + snapshot.val().message;
+  html += "\n";
+  document.getElementById("messages").innerHTML += html;
+});
+
+
+
+
+    </script>
+     
+
+
+</html>

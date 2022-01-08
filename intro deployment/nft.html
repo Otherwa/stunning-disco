@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/nft.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type= "text/javascript" src="Js/nft_driver.js"></script>
+        <meta name="google-signin-client" content="732899449129-71d0p2fhd5i53sgoovol9fjea7epfhf3.apps.googleusercontent.com">
     
     <style>
         body { 
@@ -22,13 +23,20 @@
             font-size:2vh;
         }
         img{
-            padding: 0.1rem;
-            height: 32vh;
-            width: 32vh;
+            padding: 0.2rem;
+            height: 42vh;
+            width: 42vh;
             border-radius: 0.4rem;
         }
-       
+       #but:hover{
+           background-color:red;
+       }
     </style>
+    <script type="text/javascript">
+        function red(){
+            window.open("gsign.html","_self");
+        }
+        </script>
     </head>
 <body>
     <div style="text-align:center">
@@ -38,15 +46,17 @@
     <br>
     <code style="font-size:0.7rem">Click the picture to Download</code>
 </div>
-    <section class="nft">
+    <section class="nft"></section>
         <a href="" id="anft" download="your_unique_nft">
-        <img src="imgs/nfts/490.png" id="nft" alt="Custom_nft"></a>
+        <img src="imgs/nfts/490.png" id="nft" alt="Custom_nft" style="border-style: solid;border-width: 1px"></a>
     </section>
     <div class="btn-img" style="padding:5vh;">
         <div class="text1" style="padding:5vh;text-align:center;">
-            <code>Find the cat</code>
-            </div>
-    
+           <!-- <button type="button" id="but" onclick="red()"><p style="text-decoration: none;font-family: 'Courier New', Courier, monospace;">Private chat</p></button>
+        -->   
+        </div>
+        Hidden link 
+        
 </div>
 
 </body>

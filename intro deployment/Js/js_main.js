@@ -12,7 +12,10 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec ";
   if (timerem < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "FINISHED ?";
+    document.getElementById("demo").innerHTML = " Ready?";
+    document.querySelector("#demo").style.color = "#F366FF";
+    document.querySelector("#demo").style.fontSize = "2rem";
+    
   }
 }, 1000);
 //////////////////cookies
