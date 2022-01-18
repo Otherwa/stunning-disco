@@ -13,8 +13,10 @@ We may change these terms of use from time to time. Check before re-using any co
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="icon" type="image/jpg" href="imgs/www.png">
         
-        <link rel="stylesheet" href="css/style.css">
         
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <title>
@@ -22,13 +24,26 @@ We may change these terms of use from time to time. Check before re-using any co
         </title>  
         
         <script type="text/javascript" src="Js/js_main.js"></script>
+        
 
     <style>
         /*basic script if required*/
             
     </style>
     </head>
+
+    
     <body style="margin: 0%;background-image:url('imgs/shapes.gif')" class="curve">
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.your-class').slick({
+                setting-name: setting-value
+             });    
+            });
+            </script>
         <header>
             <nav>
                 <ul class="topnav">
@@ -65,6 +80,12 @@ We may change these terms of use from time to time. Check before re-using any co
 <p style="text-align:left;font-size:1.0rem;padding-left:1.1rem;">Main</p><br>
 
 <div class="main_info" style="background-color: rgb(2, 95, 95);">
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
+</div>
            
 </section>
 
