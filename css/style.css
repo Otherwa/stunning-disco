@@ -29,7 +29,7 @@ color:white;
     box-sizing: border-box;
 }
 .main_text{
-    padding: 4vh 4vh 4vh 5vh;
+    padding: 4vh;
     line-height: 1.6rem;
     font-size: 1rem;
     text-align: justify;
@@ -317,7 +317,7 @@ footer{
     transition:1s;
     max-width: 100%;
 }
-.info:hover{
+.info:hover {
     box-shadow: 0.5rem 0.5rem rgb(219, 57, 57);
     transform: scale(0.95);
     background-color: black;
@@ -374,3 +374,4 @@ ul li{
     cursor: pointer;
     margin: 5px;
   }
+  
