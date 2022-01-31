@@ -26,8 +26,6 @@ function submitForm(e) {
   let message = document.getElementById("message").value;
   let roll = document.getElementById("roll").value;
   let phone = document.getElementById("phone").value;
-  let dept = document.getElementById("dept").value;
-  let year = document.getElementById("year").value;
   var rate;
   if(document.getElementById("min").checked == true){
     var rate =document.getElementById("min").value;
@@ -38,25 +36,25 @@ function submitForm(e) {
   else{
     var rate =document.getElementById("max").value;
   }
-  console.log(name, email, message,roll,phone,dept,rate,year);
+  console.log(name, email, message,roll,phone,rate);
 
-  if(name=="" || email=="" || roll =="" || phone=="" || dept==""){
+  if(name=="" || email=="" || roll =="" || phone==""){
     return alert("Fill again Cabron! (speaks in Spanish)");
   }
   else{
-  saveContactInfo(name, email, message,roll,phone,dept,rate,year);
+  saveContactInfo(name, email, message,roll,phone,rate);
   document.querySelector(".status").style.display ="block";
   document.querySelector(".Form_hid").style.display="none";
   setTimeout(() => {
     document.querySelector(".status").style.display="none";
-  },6900);
-  
+  },10006900);
+  document.querySelector(".Name").innerHTML = name;
   document.querySelector(".contact-form").reset();
   }
 }
 
 // Save infos to Firebase
-function saveContactInfo(name, email, message,roll,phone,dept,rate,year) {
+function saveContactInfo(name, email, message,roll,phone,rate) {
   let newContactInfo = contactInfo.push();
   newContactInfo.set({
     roll: roll,
@@ -64,10 +62,11 @@ function saveContactInfo(name, email, message,roll,phone,dept,rate,year) {
     email: email,
     message: message,
     phone: phone,
-    deptartment: dept,
     exited: rate,
-    year:year,
   });
 }
+
+
+
 
 

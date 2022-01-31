@@ -14,7 +14,9 @@ a,p{
     font-size:0.9em;
     letter-spacing:0.1rem;    
 }
-
+body{
+    padding:0vh;
+}
 .text{
     margin-left:10%;
     margin-right:10%;
@@ -123,9 +125,10 @@ font-family: 'Courier New', Courier, monospace;
 #demo{
 font-size:1.5rem;
 color:white;
-line-height: 2rem;
+line-height: 3.1rem;
 text-align:center;
-padding: 0.5rem;
+padding: 0.6rem;
+
 }
 /*button*/
 .button {
@@ -319,17 +322,21 @@ footer{
 }
 .info:hover {
     box-shadow: 0.5rem 0.5rem rgb(219, 57, 57);
-    transform: scale(0.95);
     background-color: black;
     transition: 600ms;
+    padding: 2rem;
+    margin:0.2rem;
     
 }
 
 .info p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', monospace;
     letter-spacing:1px;
     color:rgb(243, 229, 229);
     font-size: 0.7rem;
+}
+.align_max p{
+    font-family: 'Source Code Pro', monospace;
 }
 
 ul li{
