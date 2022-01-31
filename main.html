@@ -30,20 +30,11 @@ We may change these terms of use from time to time. Check before re-using any co
         /*basic script if required*/
             
     </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
     </head>
 
     
     <body style="margin: 0%;background-image:url('imgs/shapes.gif')" class="curve">
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-            $('.your-class').slick({
-                setting-name: setting-value
-             });    
-            });
-            </script>
         <header>
             <nav>
                 <ul class="topnav">
@@ -52,7 +43,6 @@ We may change these terms of use from time to time. Check before re-using any co
                     <li><a href="news.html"><i class="fa fa-podcast">&nbsp;<p>News</p></i></a></li>
                     <li><a href="games.html"><i class="fa fa-cubes">&nbsp;<p>Games</p></i></a></li>
                     <li class="right"><a  href="about.html"><i class="fa fa-code">&nbsp;<p>About</p></i></a></li>
-                    <li class="right"><a  href="nft.html"><img src="imgs/DinoConnection.gif" style="height:3.4rem;width:3.4rem;" alt="img"></i></a></li>
             
                   </ul>
             </nav>
@@ -77,18 +67,21 @@ We may change these terms of use from time to time. Check before re-using any co
                </div>
     
 <section style="padding:0rem;">
-<p style="text-align:left;font-size:1.0rem;padding-left:1.1rem;">Main</p><br>
+<p style="text-align:left;font-size:1.0rem;padding-left:1.6rem;">#Main</p><br>
 
-<div class="main_info" style="background-color: rgb(2, 95, 95);">
-    <div class="your-class">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
-</div>
            
 </section>
-
+<div class="cookie-container">
+    <p style="font-family: 'Courier New', Courier, monospace;" style="font-size:0.3rem">
+      <span style="font-size: 1.1rem;">Accept The Cookie Bruv.</span><br><br>
+      We use cookies in this website to give you the best experience on our
+      site. To find out more, read our
+      <a href="term.html">privacy policy</a> and <a href="cookiepolicy.html">cookie policy</a>.
+    </p>
+    <button class="cookie-btn" onclick="disp()">
+      Okay
+    </button>
+  </div>
         <footer>
             <br>
             <!--changing-->
@@ -100,7 +93,18 @@ We may change these terms of use from time to time. Check before re-using any co
                 <P style="float:right;font-size: 0.5rem;">&copy All rights reserved.&nbsp;</P>     
         </div>
         </footer>
-
+        <script type= "text/javascript">
+            ScrollReveal({
+               reset: true,
+               distance: '60px',
+               duration: 2500,
+               delay: 300,
+             });
+             
+             ScrollReveal().reveal('.con_main , .New', { delay: 500, origin: 'bottom', interval: 100 });
+             ScrollReveal().reveal('.new2', { delay: 100, origin: 'top',});
+             ScrollReveal().reveal('.topnav', { delay: 100, origin: 'top',});
+           </script>
     </body>
     <!--
     You weren't suppose to be here, but Nice
