@@ -22,9 +22,7 @@ const mainConfig = {
   
     //   Get input Values
     let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
-    let roll = document.getElementById("roll").value;
     let phone = document.getElementById("phone").value;
     var rate;
     if(document.getElementById("min").checked == true){
@@ -36,13 +34,13 @@ const mainConfig = {
     else{
       var rate =document.getElementById("max").value;
     }
-    console.log(name, email, message,roll,phone,rate);
+    console.log(name,message,phone,rate);
   
-    if(name=="" || email=="" || roll =="" || phone==""){
+    if(name=="" || phone==""){
       return alert("Fill again Cabron! (speaks in Spanish)");
     }
     else{
-    saveContactInfo(name, email, message,roll,phone,rate);
+    saveContactInfo(name,message,phone,rate);
     document.querySelector(".status").style.display ="block";
     document.querySelector(".Form_hid").style.display="none";
     setTimeout(() => {
@@ -54,12 +52,10 @@ const mainConfig = {
   }
   
   // Save infos to Firebase
-  function saveContactInfo(name, email, message,roll,phone,rate) {
+  function saveContactInfo(name,message,phone,rate) {
     let newContactInfo = contactInfo.push();
     newContactInfo.set({
-      roll: roll,
       name: name,
-      email: email,
       message: message,
       phone: phone,
       exited: rate,

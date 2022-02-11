@@ -9,7 +9,7 @@ var x = setInterval(function() {
   var hours = Math.floor((timerem % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((timerem % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timerem % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec " + " (tentative)";
+  document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec " +"<br>"+"(tentative)";
   if (timerem < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = " Ready Player 1 ?";
@@ -19,6 +19,8 @@ var x = setInterval(function() {
 }, 1000);
 //////////////////cookies
 
+
+///count
 
 function myFunction() {
    var element = document.querySelector('.topnav');
