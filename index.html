@@ -22,7 +22,7 @@ We may change these terms of use from time to time. Check before re-using any co
         <meta name="apple-mobile-web-app-status-bar-style" content="#b31919">
         
         <title>
-            Easter Egg.
+            Home
         </title>  
 
        
@@ -52,6 +52,17 @@ We may change these terms of use from time to time. Check before re-using any co
            setTimeout(() => { document.getElementById("Color").style.backgroundColor ="rgb(35, 182, 79)"; }, 20000);
         
         }
+        const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/inventrix.com/inventrix1?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		document.getElementById('count').innerText = res.value;
+	})
+}
            </script>
     <style>
         /*minor changes*/
@@ -66,7 +77,7 @@ We may change these terms of use from time to time. Check before re-using any co
         <header>
             <nav>
                 <ul class="topnav">
-                    <li><a class="active"href="index.html"><i class="fa fa-calendar"><p>Intro</p></i></a></li>
+                    <li><a class="active"href="index.html"><i class="fa fa-calendar"><p>Home</p></i></a></li>
                     <li><a href="main.html"><i class="fa fa-folder-open"><p>Main</p></i></a></li>
                     <li><a href="news.html"><i class="fa fa-podcast"><p>News</p></i></a></li>
                     <li><a href="games.html"><i class="fa fa-cubes"><p>Games</p></i></a></li>
@@ -97,7 +108,7 @@ We may change these terms of use from time to time. Check before re-using any co
         </div>
 
     <div class="figma" style="font-size:2.1rem;">
-    <div class="main_text" style="float:left;background-color: #e29939;">
+    <div class="main_text" style="float:left;background-color: #ac0f0f;">
         <div class="typewriter" style="margin: 1rem;">       
             <div class="typewriter-text New">
                 <p style="font-size:160%;">
@@ -106,8 +117,8 @@ We may change these terms of use from time to time. Check before re-using any co
             </div>
             <p >Make it Happen.</p>
             </div>
-        <p style="color:black;padding:0.9rem;text-align: left;font-size: 0.9rem;">
-                   The <span style="color:rgb(151, 16, 16);font-size: 0.9rem;word-spacing: 0.1em;font-family: 'Press Start 2P', cursive;"> IT department at V.G. Vaze's College of Arts, Commerce, and Science</span> hosts Inventrix every year. This event has been held every year, but just for the I.T. department. This year, though, it is going to be so much more! The goal is to get as many individuals as possible to participate.
+        <p style="color:black;padding:0.9rem;text-align: left;font-size: 0.85rem;">
+                   The <span style="color:rgb(255, 255, 255);font-size: 0.9rem;word-spacing: 0.1em;font-family: 'Press Start 2P', cursive;"> IT department at V.G. Vaze's College of Arts, Commerce, and Science</span> hosts Inventrix every year. This event has been held every year, but just for the I.T. department. This year, though, it is going to be so much more! The goal is to get as many individuals as possible to participate.
         </p>
         <div style="padding:0.9vh">
             <br>
@@ -142,7 +153,7 @@ We may change these terms of use from time to time. Check before re-using any co
     <div class="main_text">
             <div class="info new2">
                 <div>&nbsp;</div>
-                <p style="font-size:1.02rem;font-family:'Press Start 2P', cursive;">Mrs Pournima Bhangale</p><br>
+                <p style="font-size:0.9rem;font-family:'Press Start 2P', cursive;">Mrs Pournima Bhangale</p><br>
                 <p style="font-size: 1.1rem;">#004</p>
                     <div class="align_max">
                 <p>"At the center of this zone, is a Sacred Icon critical to the Great Journey. I must find it."</p>
@@ -204,7 +215,7 @@ We may change these terms of use from time to time. Check before re-using any co
             <div class="main_text">
                 <div class="info new2">
                     <div>&nbsp;</div>
-                    <p style="font-size:1.02rem;font-family:'Press Start 2P', cursive;;">Mrs Vandana Kadam</p><br>
+                    <p style="font-size:1.02rem;font-family:'Press Start 2P', cursive;">Mrs Vandana Kadam</p><br>
                     <p style="font-size: 1.1rem;">#004</p>
                         <div class="align_max">
                     <p>"At the center of this zone, is a Sacred Icon critical to the Great Journey. I must find it."</p>
@@ -215,6 +226,52 @@ We may change these terms of use from time to time. Check before re-using any co
 </div>
 <!--Scrolling-->
 
+<!--card temp-->
+<div class="game">
+            <div class="game_info" style="background-color:rgb(8, 8, 8);">
+            <p class ="new2" style="text-align: center;font-size:2rem;line-height:3rem;padding:2rem 1rem 1rem 1rem">WTF is this?</p><br>
+                <div class="align_max" style="text-align: left;padding:1.2rem;line-height:1rem;word-spacing:1px;">
+                   <!-- <img src="imgs/mine.jpg" align="right" alt="img1" style="width:15em;height:12em;padding:0.8rem;border-radius:1.3rem;">
+                   -->
+                    <ul style="list-style-type: square;">
+                     
+                        <li><p>
+
+                       Cathchphrase:
+                    </p></li>
+                    <br>
+                    <li>
+                        <p>
+
+                            Cathchphrase:
+
+                            </p>
+                    </li>
+                        <br>
+                    <li>    
+                          <p>
+                            Cathchphrase:
+                        </p>
+                    </li>
+                        <br>
+                    <li>    
+                          <p>
+                              Cathchphrase:
+                            </p>
+                            </li>
+                            </ul>
+                </div>
+                
+            </div>
+            <div style="text-align:right;padding: 1% 5% 1% 40%;background-color:rgba(231, 15, 15, 0.911);font-size:0.9rem;">
+                <div style="text-align: right;padding: 1rem;">
+                <p style="font-family:'Roboto Mono', monospace;">This page was viewed</p>
+               <p style = "font-family:Press Start 2P, cursive"id="count">0</p>
+               <p style="font-family: 'Courier New', Courier, monospace;">times</p>
+               </div>
+            </div>
+           </div>
+ <!--card end-->
 
 <div class="cookie-container">
     <p style="font-family: 'Courier New', Courier, monospace;" style="font-size:0.3rem">
@@ -227,25 +284,27 @@ We may change these terms of use from time to time. Check before re-using any co
       Okay
     </button>
   </div>
-
- <br>
- <br>
- <div class="footer">
-     &nbsp;
-     </div>
- <br>
- 
- <br>
-
  <footer>
     <br>
     <!--changing-->
     <div style="padding:0.2em">
-
-        &nbsp;<a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-instagram " style="font-size:21px;text-align:bottom;padding-right:0.5rem;padding-left: 0.2rem"></i></a>            &nbsp;
+        &nbsp;<a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-instagram " style="font-size:21px;text-align:bottom;padding-right:0.5rem;padding-left: 0.2rem"></i></a>&nbsp;
         <a style="float:left" href="https://www.instagram.com/inventrix.makeithappen/" target="_blank" name="instagram" title="instagram"><i class="fa fa-telegram " style="font-size:21px;text-align:bottom;" aria-hidden="true"></i></a>
-
-        <P style="float:right;font-size: 0.5rem;">&copy All rights reserved.&nbsp;</P>
+        <P style="float:right;font-size: 0.5rem;">&copy All rights reserved.</P>
+        <br>
+        <div>
+        <br>
+        <P style="float:left;font-size: 0.5rem;padding:1px">Contact
+            <br><br>+91-8828388979
+            <br><br>+91-8828388979</P>
+            <P style="float:right;font-size: 0.5rem;"><br><br>Cele mow<br><br>(Anagram)</P>
+            <br>
+            <div id ="spam">
+            <br>
+            &nbsp;&nbsp;
+            <br>
+            </div>
+        </div>
     </div>
 </footer>
 <script type= "text/javascript">
