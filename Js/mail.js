@@ -36,7 +36,7 @@ function submitForm(e) {
   else{
     var rate =document.getElementById("max").value;
   }
-  console.log(name, email, message,roll,phone,rate);
+  // console.log(name, email, message,roll,phone,rate);
 
   if(name=="" || email=="" || roll =="" || phone==""){
     return alert("Fill again Cabron! (speaks in Spanish)");
@@ -57,7 +57,7 @@ function submitForm(e) {
 function saveContactInfo(name, email, message,roll,phone,rate) {
   let newContactInfo = contactInfo.push();
   newContactInfo.set({
-    roll: roll,
+    department: roll,
     name: name,
     email: email,
     message: message,

@@ -12,7 +12,7 @@ const mainConfig = {
   firebase.initializeApp(mainConfig);
   
   // Refernece contactInfo collections
-  let contactInfo = firebase.database().ref("Stumble_Regs");
+  let contactInfo = firebase.database().ref("Techtionary_Regs");
   
   // Listen for a submit
   document.querySelector(".contact-form").addEventListener("submit", submitForm);
@@ -57,7 +57,7 @@ const mainConfig = {
   function saveContactInfo(name, email, message,roll,phone,rate) {
     let newContactInfo = contactInfo.push();
     newContactInfo.set({
-      department:roll,
+      department: roll,
       name: name,
       email: email,
       message: message,

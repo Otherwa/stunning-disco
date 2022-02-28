@@ -120,8 +120,9 @@ font-family: 'Courier New', Courier, monospace;
 }
 .game_info li p{
     font-family:  'Roboto Mono', monospace;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
+
 #demo{
 font-size:1.5rem;
 color:white;
@@ -369,16 +370,23 @@ ul li{
   .cookie-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: rgb(35, 182, 79);
-    border: none;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: #92a8d1;
     color: #FFFFFF;
     text-align: center;
     font-size: 0.8rem;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 3rem 1rem;
-    width: 6rem;
+    width: 4.5rem;
+    height: 3.1rem;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
   }
+
+  .cookie-btn:hover{
+      background-color: rgb(14, 236, 236);
+  }
   
+
