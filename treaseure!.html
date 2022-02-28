@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="imgs/www.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>
+            Treasure
+        </title>  
+        
+        <!-- <script type="text/javascript" src="Js/js_main.js"></script> -->
+        <script type="text/javascript">
+             var error = 0;
+            function submitForm(){
+            var ans = document.getElementById("ans").value;
+            console.log(ans);
+            if(ans == 6713){
+                console.log("nice");
+               
+                    document.querySelector(".disp").style.display="block";
+                    document.querySelector(".disp1").style.display="none";
+                    document.querySelector(".disp3").style.display="none";
+         }
+         else{
+            document.querySelector(".disp1").style.display="block";
+            error++;
+            document.getElementById("msg").innerHTML = "You've Give the Answer Wrong " + error + " times";
+            document.querySelector(".disp").style.display="none";
+            
+         }
+        }
+        function ok1(){
+            document.querySelector(".container").style.display="block";
+            document.querySelector(".main").style.display="none";
+            console.log("nice");
+        }
+        </script>
+
+    <style>
+        .container_main {
+            text-align:center;
+        }
+        /*basic script if required*/
+    p{
+        font-family:  'Roboto Mono', monospace;
+        font-size: 1.3rem;
+    }
+    #msg{
+        color: red;
+    }
+    .button {
+     background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    input[type=text] {
+         width: 20%;
+         padding: 1rem;
+         margin: 8px;
+         box-sizing: border-box;
+         border: 2px solid red;
+         border-radius: 4px;
+         font-family:  'Courier New', Courier, monospace;
+        }
+    </style>
+  </head>
+  <body style="background-color:black;padding:2vh">
+    <div class="main" style="text-align:center;display:block;padding:1.5rem">
+        <p style="font-family: 'Press Start 2P', cursive;">Demo Mystery Hunt</p>
+        <br>
+        <img src="imgs/champ.jpg" style="width:25rem;height:13rem">
+        <br>
+        <p style="font-size: 1.3rem;">Test Your IQ</p>
+        <input class="button" type="submit" value="Test" onclick="ok1()">
+        </div>
+      <div class="container" style="display:none">
+            <p style=" text-align:center">Main treasures page 1</P>
+                <div id="content" style="text-align:center;background-color:rgb(0, 0, 0);padding: 1vh;border-radius: 3px;">
+                    <div id="main_con_img">
+                    <!-- <img src="imgs/mine.gif" style="width:13rem;height:14rem"> -->
+                    <img src="imgs/img1.jpeg"style="width:20rem;height:20rem"> 
+                    </div>
+                    <p>Quick Mafs</p>
+                    
+                    </div>
+
+                    <div style="text-align:center">
+                        <br>
+                    <input id="ans" type="text" name="input_text">
+                        <br>
+                        <br>
+                        
+                    <input type="submit" class="button disp3" value="Submit" onclick="submitForm()">
+                    
+                    <div class="disp1" style="display:none">
+                        <p id ="msg">
+                            Error!
+                        </p>    
+                        </div>
+
+                    <div class="disp" style="display:none">
+                    <p>
+                        Congratulations! You have successfully passed (next link next question..) while end of treasure hunt.
+                    </p>    
+                    </div>
+        </div>
+        <div>
+
+            </div>
+
+  </body>
+  </html>
