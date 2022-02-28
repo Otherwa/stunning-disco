@@ -1,5 +1,5 @@
 //timer
-var countDownDate = new Date("Feb 14, 2022 00:00:00").getTime(); //Set date on event
+var countDownDate = new Date("Mar 4, 2022 00:00:00").getTime(); //Set date on event
 // Update 1 second
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -9,10 +9,10 @@ var x = setInterval(function() {
   var hours = Math.floor((timerem % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((timerem % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timerem % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec " +"<br>"+"(tentative)";
+  document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec ";
   if (timerem < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = " Ready Player 1 ?";
+    document.getElementById("demo").innerHTML = "Webphobia 404";
     document.querySelector("#demo").style.fontSize = "2rem";
     
   }
@@ -42,6 +42,8 @@ setTimeout(() => {
 function Redirect(){
   window.open('contact_form.html', '_self');
 }
-
+ function Redirect_stu(){
+   window.open('contact_stu.html', '_self');
+ }
 
 

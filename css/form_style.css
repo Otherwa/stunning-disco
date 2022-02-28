@@ -58,6 +58,7 @@ body {
   border-radius: 0.5rem;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   background-color: #000000;
+  top: -0.6rem;
 }
 
 /* 
@@ -65,7 +66,7 @@ When the input is in the focus state reduce the size  label and move
 */
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.6rem;
+  
   font-size: 0.8rem;
   left: 0.8rem;
 }
