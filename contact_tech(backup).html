@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/form_style.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Contact us</title>
-  <style type="text/css">
-
-    </style>
   </head>
   <body class="curve1" style="padding:1rem">
 <!--nav bar-->
@@ -26,15 +23,30 @@
     <div style="text-align:center;line-height: 1.6rem;padding-top:2rem;background-color:black;border-radius: 0.3rem;">
     <p style="font-size:1.2rem">Register !!</p>
     <br>
-    <p style="padding:2rem;font-size: 1.1rem;">Escape the site seek the truth</p>   
+    <p style="padding:2rem;font-size: 1.1rem;">Techtionary learn something new.</p>   
     
-    <form class="contact-form" style="display:none">
+    <form class="contact-form">
       <a href="nft.html" target="_blank"><img src="imgs/GIF.gif" alt ="memo" style="width:14rem;height:14rem;"></a>
       <br><br>
   <div class="Form_hid" style="display:block;">
     <div class="form">
-      <input type="text" id="name" class="form__input" autocomplete="off" placeholder="Your name">
+      <input type="text" id="name1" class="form__input" autocomplete="off" placeholder="Your name (grp leader)">
       <label for="email" class="form__label">Name</label>
+    </div>
+    <br><br>
+    <div class="form">
+      <input type="text" id="name2" class="form__input" autocomplete="off" placeholder="Your name (2 person)">
+      <label for="email" class="form__label">Name</label>
+    </div>
+    <br><br>
+    <div class="form">
+      <input type="text" id="name3" class="form__input" autocomplete="off" placeholder="Your name (3 person)">
+      <label for="email" class="form__label">Name</label>
+    </div>
+    <br><br>
+    <div class="form">
+      <input type="text" id="name4" class="form__input" autocomplete="off" placeholder="Year (FY,SY,TY)">
+      <label for="email" class="form__label">Year</label>
     </div>
     <br><br>
     <div class="form">
@@ -58,7 +70,7 @@
     </div>
     <br><br>
     <div class="form">
-      <input type="text" id="phone" class="form__input" autocomplete="off" placeholder="e.g 1234567890">
+      <input type="text" id="phone" class="form__input" autocomplete="off" placeholder="e.g 1234567890 (anyone frm grp)">
       <label for="email" class="form__label">Phone</label>
     </div>
     <br><br>
@@ -71,26 +83,46 @@
         <br>
       <div style="text-align: center;">
       
-        <!--<button type="submit">Submit</button>-->
+        <button class="button" type="submit" style="vertical-align:middle;width: 5em"><span style="font-family:'Press Start 2P', cursive;font-size: 0.7rem;line-height: 1.6rem;">Apply </span></button>
+      <!--<button type="submit">Submit</button>-->
         <br>
         <br>
         </div>
     </form>
+    <div style="text-align:center">
+      <p>For registered users</p>
+      <br>
+      <br>
+      <a href="https://chat.whatsapp.com/FHAl8S8Ry1YAwtnHHV0ULo">FY Techtionary</a>
+      <br>
+      <br>
+      <a href="https://chat.whatsapp.com/JtSieLIJlFNJwJoeClVGiZ">SY Techtionary</a>
+      <br>
+      <br>
+      <a href="https://chat.whatsapp.com/LV4pY6ePPXb29vf1x0TUBT">TY Techtionary</a>
+      <br>
+      <br>
+
+      </div>
     </div>
-    <div class="status" style="display:block;margin:2rem;">
-      <p class="Name">Sorry</p>
+    
+
+
+    <div class="status" style="display:none;margin:2rem;">
+      <p class="Name">Context</p>
+      <p style="font-family: 'Courier New', Courier, monospace;font-size: 1rem;">Your form was submited please do not reply again ^_^ join the whats app group below Coordinate Your fellow Teams to respective Groups<br><span style="color:yellow">...</span></p>
       <br>
-      <img src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif" alt ="memo" style="width:14rem;height:14rem;"></a>
+      <button class="cookie-btn" onclick="whats2_1()" style="width: 11.5rem;font-family: 'Courier New', Courier, monospace;">WhatsApp Group FY</button>  
       <br>
-      <p style="font-family: 'Courier New', Courier, monospace;font-size: 1rem;">The Registrations are filled up please try again next year<br><span style="color:yellow">...</span></p>
-      <br>
-      <!-- <button class="cookie-btn" onclick="whats1()" style="width: 11.5rem;font-family: 'Courier New', Courier, monospace;">Join WhatsApp Group</button>
-     -->
+      <button class="cookie-btn" onclick="whats2_2()" style="width: 11.5rem;font-family: 'Courier New', Courier, monospace;">WhatsApp Group SY</button>  
+    <br>
+    <button class="cookie-btn" onclick="whats2_3()" style="width: 11.5rem;font-family: 'Courier New', Courier, monospace;">WhatsApp Group TY</button>  
+    
     </div>
   </div>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
     <br>
-    <script src="Js/mail2_st.js"></script>
-
+    <script src="Js/mail2_tech.js"></script>
+  
   </body>
 </html>

@@ -66,7 +66,9 @@ const mainConfig = {
     });
   }
   
-  
+  function whats1(){
+  window.open("https://chat.whatsapp.com/KbWfM9dcW7VGnl7RIjymrd","_self");
+  }
   
   
   

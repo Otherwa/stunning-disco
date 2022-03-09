@@ -1,5 +1,5 @@
 //timer
-var countDownDate = new Date("Mar 4, 2022 00:00:00").getTime(); //Set date on event
+var countDownDate = new Date("Mar 9, 2022 08:30:00").getTime(); //Set date on event
 // Update 1 second
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -12,7 +12,7 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec ";
   if (timerem < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Webphobia 404";
+    document.getElementById("demo").innerHTML = "Ready Player 1.";
     document.querySelector("#demo").style.fontSize = "2rem";
     
   }
@@ -40,7 +40,7 @@ setTimeout(() => {
 
 /////////window
 function Redirect(){
-  window.open('contact_form.html', '_self');
+  window.open('main.html', '_self');
 }
  function Redirect_stu1(){
    window.open('contact_stu.html', '_self');
@@ -99,4 +99,8 @@ function instructionscls2(){
 
   function ref2(){
     window.open("https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies&hl=en_IN&gl=US","_self")
+  }
+
+  function ref3(){
+    window.open("https://gartic.io/","_self")
   }

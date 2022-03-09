@@ -21,7 +21,10 @@ const mainConfig = {
     e.preventDefault();
   
     //   Get input Values
-    let name = document.getElementById("name").value;
+    let name1 = document.getElementById("name1").value;
+    let name2 = document.getElementById("name2").value;
+    let name3 = document.getElementById("name3").value;
+    let name4 = document.getElementById("name4").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
     let roll = document.getElementById("roll").value;
@@ -38,11 +41,11 @@ const mainConfig = {
     }
     // console.log(name, email, message,roll,phone,rate);
   
-    if(name=="" || email=="" || roll =="" || phone==""){
+    if(name1=="" || email=="" || roll =="" || phone==""){
       return alert("Fill again Cabron! (speaks in Spanish)");
     }
     else{
-    saveContactInfo(name, email, message,roll,phone,rate);
+    saveContactInfo(name1,name2,name3,name4, email, message,roll,phone,rate);
     document.querySelector(".status").style.display ="block";
     document.querySelector(".Form_hid").style.display="none";
     setTimeout(() => {
@@ -54,11 +57,14 @@ const mainConfig = {
   }
   
   // Save infos to Firebase
-  function saveContactInfo(name, email, message,roll,phone,rate) {
+  function saveContactInfo(name1,name2,name3,name4, email, message,roll,phone,rate) {
     let newContactInfo = contactInfo.push();
     newContactInfo.set({
       department: roll,
-      name: name,
+      grp_leader: name1,
+      grp_per2:name2,
+      grp_per3:name3,
+      grp_per4:name4,
       email: email,
       message: message,
       phone: phone,
@@ -67,7 +73,9 @@ const mainConfig = {
   }
   
   
-  
+  function whats3(){
+    window.open("https://chat.whatsapp.com/DMrx8xTP73gBPMDWLSOJJ9","_self");
+  }
   
   
   
