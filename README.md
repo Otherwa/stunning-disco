@@ -13,9 +13,11 @@
 - `Google Analaytics API.`
 - `Scroll JS.` [documentation](https://scrollrevealjs.org/)
 
-`In a nutshell`
-
+## In a nutshell
 ![images](https://user-images.githubusercontent.com/67428572/163597389-bb0c7c56-91e5-4599-ac12-ee59247a1217.jpg)
+
+and
+
 ![all-might-youre-next](https://user-images.githubusercontent.com/67428572/163597542-d518abed-bbc9-4e13-b785-7cf2418eed51.gif)
 
 
@@ -23,7 +25,69 @@
 
 - Interfacing form data by storing it in JSON format in `LiveDataBase Firebase`
 - [For Reference] (https://youtu.be/zx2YoBMfflM)
--  
+-  Static page can be rendered as per the person whose going to implement this
+
+### Database bridge
+## basic Snippet
+```
+// Your web app's Firebase configuration
+const mainConfig = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
+};
+
+// Initialize Firebase
+firebase.initializeApp(mainConfig);
+
+// Refernece contactInfo collections
+let contactInfo = firebase.database().ref("Inventrix_Regs");
+
+// Listen for a submit
+document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  //   Get input Values
+  let name = document.getElementById(" ").value;
+  let email = 
+  let message = 
+  let roll = 
+  let phone = 
+  var rate;
+ //all your validation code
+  }
+  else{
+  saveContactInfo(name, email, message,roll,phone,rate);
+  document.querySelector(".status").style.display ="block";
+  document.querySelector(".Form_hid").style.display="none";
+  setTimeout(() => {
+    document.querySelector(".status").style.display="none";
+  },10006900);
+  document.querySelector(".Name").innerHTML = name;
+  document.querySelector(".contact-form").reset();
+  }
+}
+
+// Save infos to Firebase
+function saveContactInfo(name, email, message,roll,phone,rate) {
+  let newContactInfo = contactInfo.push();
+  newContactInfo.set({
+    department: roll,
+    name: name,
+    email: email,
+    message: message,
+    phone: phone,
+    exited: rate,
+  });
+
+}
+```
 
 # Overview
 
