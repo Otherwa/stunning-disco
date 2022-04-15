@@ -65,12 +65,7 @@ function submitForm(e) {
   }
   else{
   saveContactInfo(name, email, message,roll,phone,rate);
-  document.querySelector(".status").style.display ="block";
-  document.querySelector(".Form_hid").style.display="none";
-  setTimeout(() => {
-    document.querySelector(".status").style.display="none";
-  },10006900);
-  document.querySelector(".Name").innerHTML = name;
+  //err code
   document.querySelector(".contact-form").reset();
   }
 }
