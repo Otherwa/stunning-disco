@@ -12,8 +12,9 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "hrs "+ minutes + "min " + seconds + "sec ";
   if (timerem < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Ready Player 1.";
+    document.getElementById("demo").innerHTML = "Sucessfull Ended";
     document.querySelector("#demo").style.fontSize = "2rem";
+    document.querySelector("#demo").style.line_height = "1.6rem";
     
   }
 }, 1000);
