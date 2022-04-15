@@ -28,7 +28,8 @@ and
 -  Static page can be rendered as per the person whose going to implement this
 
 ### Database bridge
-## Basic Snippet for `Collecting Form Data`
+## Basic Snippet for 
+`Collecting Form Data`
 ```
 // Your web app's Firebase configuration
 const mainConfig = {
