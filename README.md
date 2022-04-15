@@ -9,8 +9,8 @@
 
 - `Firebase account.` [documentation](https://firebase.google.com/docs?authuser=0&hl=en)
 - `basic JS.`
-- `Google fonts API.`
-- `Google Analaytics API.`
+- `Google fonts API.` [documentation](https://fonts.google.com/knowledge)
+- `Google Analaytics API.` [documentation](https://developers.google.com/analytics)
 - `Scroll JS.` [documentation](https://scrollrevealjs.org/)
 
 ## In a nutshell
