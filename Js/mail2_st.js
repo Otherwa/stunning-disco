@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 const mainConfig = {
-    apiKey: "A ",
-    authDomain: "vent-9 ",
-    databaseURL: "https://vent- ",
-    projectId: "ve ",
-    storageBucket: "vent- ",
-    messagingSenderId: " ",
-    appId: " "
+    apiKey: "AIzaSyBKTjTMy2Trfs79UHuXHOrgFKSAEQnUYV4",
+    authDomain: "vent-92591.firebaseapp.com",
+    databaseURL: "https://vent-92591-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "vent-92591",
+    storageBucket: "vent-92591.appspot.com",
+    messagingSenderId: "832851875687",
+    appId: "1:832851875687:web:7b3acbe6da4a15371b01c2"
   };
   // Initialize Firebase
   firebase.initializeApp(mainConfig);
