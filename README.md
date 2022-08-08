@@ -23,7 +23,7 @@ and
 
 # Introduction
 
-- Interfacing form data by storing it in JSON format in `LiveDataBase` //Firebase
+- Interfacing form data by storing it in JSON format in `LiveDataBase` [NoSQL Database DOM oriented]//Firebase
 - [For Reference] (https://youtu.be/zx2YoBMfflM)
 -  Static page can be rendered as per the person whose going to implement this
 
