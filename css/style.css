@@ -1,4 +1,6 @@
 /*main design and nav*/
+@import url('http://fonts.cdnfonts.com/css/dot-matrix');
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,10 +10,10 @@ html{
     margin:0%;
     align-items:center;
 }
-a,p{
+a,p,a{
     color:white;
-    font-family: 'Press Start 2P', cursive;
-    font-size:0.9em;
+    font-family: 'Dot Matrix', sans-serif;
+    font-size:1rem;
     letter-spacing:0.1rem;    
 }
 body{
@@ -119,7 +121,6 @@ font-family: 'Courier New', Courier, monospace;
     text-align:left;
 }
 .game_info li p{
-    font-family:  'Roboto Mono', monospace;
     font-size: 1.2rem;
 }
 
@@ -207,13 +208,17 @@ img {
             float: left;
         }
 
+ul.topnav p{
+    font-size: 1.5em;
+}
+
         ul.topnav li a {
         display: block;
         color: white;
         text-align: center;
-        padding: 1.4rem 1.6rem;
+        padding: 0.5rem 1.6rem;
         text-decoration: none;
-        }
+    }
 
         ul.topnav li a:hover:not(.active) {
             background-color: rgb(223, 135, 135);
@@ -243,11 +248,6 @@ img {
         padding: auto;
         pointer-events: none;
     }
-    .nav_icon{
-        height:1.5rem;
-        width: 1.5rem;
-        padding: 1rem 1rem;
-    }
 
     /*typing anim*/
 
@@ -257,7 +257,7 @@ img {
 
 .typewriter {
 	display: inline-block;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Dot Matrix', sans-serif;
     height:auto;
     width: auto;
     
@@ -363,8 +363,6 @@ ul li{
   
   .cookie-container a {
     color: #f5f6fa;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.6rem;
   }
   
   .cookie-btn {
@@ -382,11 +380,11 @@ ul li{
     height: 3.1rem;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 1px;
   }
 
   .cookie-btn:hover{
-      background-color: rgb(14, 236, 236);
+      background-color: rgb(14, 236, 66);
   }
   
 

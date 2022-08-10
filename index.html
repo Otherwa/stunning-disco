@@ -11,7 +11,7 @@ We may change these terms of use from time to time. Check before re-using any co
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
         <link rel="icon" type="image/jpg" href="imgs/www.png">
         <link rel="stylesheet" href="../css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,7 @@ We may change these terms of use from time to time. Check before re-using any co
         <!-- Windows Phone -->
         <meta name="msapplication-navbutton-color" content="#b31919">
         <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#b31919">
-        
+        <meta name="apple-mobile-web-app-status-bar-style" content="#b31919">        
         <title>
             Home
         </title>  
@@ -34,56 +33,32 @@ We may change these terms of use from time to time. Check before re-using any co
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-B9WGS5D46K');
 </script>
 
-        <script type="text/javascript" src="Js/js_main.js"></script>
-        <script type="text/javascript">
-            function ssj(){
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="red"; }, 2000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="blue"; }, 4000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="green"; }, 6000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="red"; }, 8000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="blue"; }, 10000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="green"; }, 12000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="red"; }, 14000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="blue"; }, 16000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="green"; }, 18000);
-           setTimeout(() => { document.getElementById("Color").style.backgroundColor ="rgb(35, 182, 79)"; }, 20000);
-        
-        }
-        const countEl = document.getElementById('count');
+<script type="text/javascript" src="Js/js_main.js"></script>
 
+<script type="text/javascript">         
+const countEl = document.getElementById('count');
 updateVisitCount();
-
 function updateVisitCount() {
 	fetch('https://api.countapi.xyz/update/inventrix.com/inventrix1?amount=1')
 	.then(res => res.json())
 	.then(res => {
-		document.getElementById('count').innerText = res.value;
+	    document.getElementById('count').innerText = res.value;
 	})
-}
-           </script>
-    <style>
-        /*minor changes*/
-        @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-        
-
-    </style>
+    }
+    </script>
     </head>
-    <body onLoad="ssj()" style="margin: 0%;background-image:url('imgs/shapes.gif')" class="curve">
+    <body style="margin: 0%;background-image:url('imgs/shapes.gif')" class="curve">
         <header>
             <nav>
                 <ul class="topnav">
-                    <li><a class="active"href="index.html"><i class="fa fa-calendar"><p>Home</p></i></a></li>
-                    <li><a href="main.html"><i class="fa fa-folder-open"><p>Events</p></i></a></li>
-                    <li><a href="news.html"><i class="fa fa-podcast"><p>News</p></i></a></li>
-                    <li><a href="games.html"><i class="fa fa-cubes"><p>Games</p></i></a></li>
-                    <li class="right"><a  href="about.html"><i class="fa fa-code"><p>About</p></i></a></li>
+                    <li><a class="active"href="index.html"><p>Home</p></a></li>
+                    <li><a href="main.html"><p>Events</p></a></li>
+                    <li><a href="news.html"><p>News</p></a></li>
+                    <li><a href="games.html"><p>Games</p></a></li>
+                    <li class="right"><a  href="about.html"><p>About</p></a></li>
                  </ul>
             </nav>
             </header>
@@ -99,8 +74,8 @@ function updateVisitCount() {
             <br>
             <br>
             <br>
-            <p id="demo1" style="font-size:1.45rem;color:#ffffff;line-height:2.7rem;text-align: center;" class = "new">Webphobia 404 !</p>
-            <p id="demo" class="New" style = "font-size:1.2rem">Ping...</p><br>
+            <p id="demo1" style="font-size:4.45rem;color:#ffffff;line-height:2.7rem;text-align: center;" class = "new">Webphobia 404 !</p>
+            <p id="demo" class="New" style = "font-size:1.6rem">Ping...</p><br>
                 </div>
                 <br>
                 <br>
@@ -120,8 +95,8 @@ function updateVisitCount() {
             </div>
             <p >Make It Happen.</p>
             </div>
-        <p style="color:black;padding:0.9rem;text-align: left;font-size: 0.85rem;">
-                   The <span style="color:rgb(255, 255, 255);font-size: 0.9rem;word-spacing: 0.1em;font-family: 'Press Start 2P', cursive;"> 
+        <p style="color:black;padding:0.9rem;text-align: left;font-size: 1.15rem;">
+                   The <span style="color:rgb(255, 255, 255);font-size: 0.9rem;word-spacing: 0.1em;"> 
                     Organized by IT department of V. G. Vaze college</span>, here we are again with a lot of fun events... 
 Inspite of the situations, we are organizing inventrix again this year justt with a little change of mode. The goal is to have as many individuals as possible to participate.</p>
         <div style="padding:1vh">
@@ -154,17 +129,13 @@ Inspite of the situations, we are organizing inventrix again this year justt wit
     <div class="game_info" style="background-color:rgb(8, 8, 8);">
         <div class="align_max" style="text-align: left;padding:1.2rem;line-height:1rem;word-spacing:1px;">
             <ul style="list-style-type: square;">
-             
                 <li><p>
-
                A Webpage 
             </p></li>
             <br>
             <li>
                 <p>
-
                     For The Students
-
                     </p>
             </li>
                 <br>
@@ -280,7 +251,7 @@ Inspite of the situations, we are organizing inventrix again this year justt wit
 
 
 <div class="cookie-container">
-    <p style="font-family: 'Courier New', Courier, monospace;" style="font-size:0.3rem">
+    <p>
       <span style="font-size: 1.1rem;">Accept The Cookie Bruv.</span><br><br>
       We use cookies in this website to give you the best experience on our
       site. To find out more, read our
